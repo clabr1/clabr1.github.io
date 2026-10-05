@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Claudia Bruno — Biomedical Engineering</title>
+
+<style>
+:root{
+  color-scheme:light dark;
+  --bg:light-dark(#f7f7f3,#111513);
+  --surface:light-dark(#fff,#181c1a);
+  --ink:light-dark(#17201f,#eef2ef);
+  --muted:light-dark(#68726f,#aeb8b4);
+  --line:light-dark(#dce1de,#303734);
+  --accent:light-dark(#1f5f5b,#7fc2bc)
+}
+
+*{box-sizing:border-box}
+
+html{scroll-behavior:smooth}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font:15px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif
+}
+
+a{color:inherit}
+
+main{
+  max-width:900px;
+  margin:auto;
+  padding:28px 22px 50px
+}
+
+.top{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:30px;
+  padding-bottom:22px;
+  border-bottom:1px solid var(--line)
+}
+
+h1{
+  font-size:30px;
+  line-height:1.1;
+  margin:0 0 5px;
+  letter-spacing:-.03em
+}
+
+.role{color:var(--muted)}
+
+nav{
+  display:flex;
+  flex-wrap:wrap;
+  gap:16px;
+  margin:15px 0 25px;
+  font-size:13px
+}
+
+nav a{
+  text-decoration:none;
+  color:var(--muted)
+}
+
+nav a:hover{color:var(--accent)}
+
+section{
+  padding:20px 0;
+  border-bottom:1px solid var(--line)
+}
+
+h2{
+  font-size:14px;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  margin:0 0 12px
+}
+
+.about{max-width:760px}
+
+.skills{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:9px 30px
+}
+
+.skill{
+  padding:8px 0;
+  border-top:1px solid var(--line)
+}
+
+.skill b{
+  display:block;
+  font-size:13px;
+  margin-bottom:2px
+}
+
+.skill span{
+  color:var(--muted);
+  font-size:13px
+}
+
+.project{
+  display:grid;
+  grid-template-columns:32px 1fr auto;
+  gap:12px;
+  padding:11px 0;
+  border-top:1px solid var(--line);
+  align-items:start
+}
+
+.project:first-of-type{border-top:0}
+
+.num{
+  font-size:12px;
+  color:var(--muted)
+}
+
+.project h3{
+  font-size:14px;
+  margin:0 0 3px
+}
+
+.project p{
+  margin:0;
+  color:var(--muted);
+  font-size:13px
+}
+
+.tag{
+  font-size:11px;
+  color:var(--accent);
+  white-space:nowrap
+}
+
+.pub{
+  font-size:11px;
+  color:var(--accent);
+  text-decoration:none;
+  margin-left:8px
+}
+
+.conf{
+  color:var(--muted);
+  font-size:13px
+}
+
+.contact{
+  display:flex;
+  flex-wrap:wrap;
+  gap:18px;
+  font-size:13px
+}
+
+.contact a{
+  color:var(--accent);
+  text-decoration:none
+}
+
+@media(max-width:650px){
+  main{
+    padding:20px 16px 40px
+  }
+
+  .top{
+    grid-template-columns:1fr
+  }
+
+  .skills{
+    grid-template-columns:1fr
+  }
+
+  .project{
+    grid-template-columns:25px 1fr
+  }
+
+  .tag{
+    grid-column:2
+  }
+}
+</style>
+</head>
+
+<body>
+<main>
+
+<header class="top">
+  <div>
+    <h1>Claudia Bruno</h1>
+    <div class="role">
+      Modeling &amp; Simulation Engineer · PhD in Biomedical Engineering, UCL
+    </div>
+  </div>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#conferences">Conferences</a>
+  <a href="#contact">Contact</a>
+  <a href="#contact">CV</a>
+</nav>
+
+<section id="about">
+  <h2>About</h2>
+  <div class="about">
+    Biomedical engineer working at the intersection of computational modelling,
+    experimental validation and data-driven analysis. My work combines CFD,
+    CAD, optimisation, Python-based data analysis and experimental flow
+    measurement to support healthcare technology development.
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+
+  <div class="skills">
+
+    <div class="skill">
+      <b>Computational Modelling</b>
+      <span>CFD · CAD · meshing · post-processing · solver setup</span>
+    </div>
+
+    <div class="skill">
+      <b>Data &amp; Optimisation</b>
+      <span>Python · statistics · DOE · metamodels · optimisation</span>
+    </div>
+
+    <div class="skill">
+      <b>Experimental</b>
+      <span>PIV · flow measurements · CFD validation</span>
+    </div>
+
+    <div class="skill">
+      <b>Engineering</b>
+      <span>SolidWorks · Ansys Fluent · optiSLang · Simpleware ScanIP · 3D printing</span>
+    </div>
+
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Selected Projects</h2>
+
+  <div class="project">
+    <div class="num">01</div>
+    <div>
+      <h3>
+        Clinical Data Analysis
+        <a class="pub" href="https://doi.org/10.1007/s00467-026-07500-6">
+          Published ↗
+        </a>
+      </h3>
+      <p>
+        Analysed paediatric haemodialysis catheter data in Python using
+        data processing, statistical testing, survival analysis and
+        visualisation.
+      </p>
+    </div>
+    <div class="tag">Python · Statistics</div>
+  </div>
+
+  <div class="project">
+    <div class="num">02</div>
+    <div>
+      <h3>Catheter Design &amp; DOE</h3>
+      <p>
+        Built a workflow from micro-CT images and geometric measurements
+        to SolidWorks CAD, CFD setup and Design of Experiments to study
+        catheter geometry.
+      </p>
+    </div>
+    <div class="tag">CAD · CFD · DOE</div>
+  </div>
+
+  <div class="project">
+    <div class="num">03</div>
+    <div>
+      <h3>Experimental Flow Measurement</h3>
+      <p>
+        Developed and used a controlled flow-loop with Particle Image
+        Velocimetry to obtain experimental flow measurements for comparison
+        with computational models.
+      </p>
+    </div>
+    <div class="tag">PIV · Validation</div>
+  </div>
+
+  <div class="project">
+    <div class="num">04</div>
+    <div>
+      <h3>Micro-CT Fixture Design</h3>
+      <p>
+        Designed and fabricated a custom fixture to position haemodialysis
+        catheters for micro-CT imaging, from CAD design through 3D printing
+        and scanner setup.
+      </p>
+    </div>
+    <div class="tag">CAD · Prototyping</div>
+  </div>
+
+</section>
+
+<section id="conferences">
+  <h2>Conferences &amp; Presentations</h2>
+  <div class="conf">
+    Selected conference talks and poster presentations will be listed here.
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+
+  <div class="contact">
+    <a href="mailto:claudia.bruno96@gmail.com">Email</a>
+    <a href="#">LinkedIn</a>
+    <a href="#">GitHub</a>
+    <a href="#">Download CV</a>
+  </div>
+</section>
+
+</main>
+</body>
+</html>
