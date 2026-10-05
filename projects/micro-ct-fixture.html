@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Micro-CT Fixture Design | Claudia Bruno</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      color: #222;
+      background: #fff;
+      line-height: 1.65;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 50px 25px 70px;
+    }
+
+    a {
+      color: #333;
+    }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 35px;
+      text-decoration: none;
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    .back:hover {
+      color: #000;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .subtitle {
+      font-size: 1.15rem;
+      color: #555;
+      margin-bottom: 8px;
+    }
+
+    .meta {
+      color: #777;
+      font-size: 0.9rem;
+      margin-bottom: 45px;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      margin-top: 45px;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    p {
+      max-width: 800px;
+    }
+
+    .workflow {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin: 25px 0 35px;
+    }
+
+    .step {
+      border: 1px solid #ddd;
+      padding: 18px 15px;
+      background: #fafafa;
+    }
+
+    .step-number {
+      font-size: 0.8rem;
+      color: #888;
+      margin-bottom: 8px;
+    }
+
+    .step-title {
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .step-text {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    figure {
+      margin: 0 0 25px;
+    }
+
+    figure img {
+      width: 100%;
+      max-height: 500px;
+      object-fit: contain;
+      display: block;
+      background: #f7f7f7;
+      border: 1px solid #e1e1e1;
+    }
+
+    figcaption {
+      font-size: 0.85rem;
+      color: #777;
+      margin-top: 8px;
+    }
+
+    .note {
+      border-left: 3px solid #ccc;
+      padding: 12px 18px;
+      margin: 30px 0;
+      color: #666;
+      background: #fafafa;
+    }
+
+    .tools {
+      color: #555;
+    }
+
+    @media (max-width: 700px) {
+      .workflow {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .workflow {
+        grid-template-columns: 1fr;
+      }
+
+      .container {
+        padding: 35px 20px 50px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <a class="back" href="../index.html">← Back to homepage</a>
+
+    <h1>Micro-CT Fixture Design</h1>
+
+    <div class="subtitle">
+      CAD, 3D printing and micro-CT positioning
+    </div>
+
+    <div class="meta">
+      CAD · 3D Printing · Micro-CT
+    </div>
+
+
+    <h2>Overview</h2>
+
+    <p>
+      Designed and fabricated a custom fixture to position haemodialysis
+      catheters for micro-CT imaging, from CAD design through 3D printing
+      and scanner setup.
+    </p>
+
+    <p>
+      The fixture was developed to provide stable and repeatable positioning
+      of the catheter during imaging while maintaining access to the relevant
+      regions of interest.
+    </p>
+
+
+    <h2>Design workflow</h2>
+
+    <div class="workflow">
+
+      <div class="step">
+        <div class="step-number">01</div>
+        <div class="step-title">Requirements</div>
+        <div class="step-text">
+          Definition of positioning and imaging requirements
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">02</div>
+        <div class="step-title">CAD</div>
+        <div class="step-text">
+          Fixture design and geometry development
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">03</div>
+        <div class="step-title">3D Printing</div>
+        <div class="step-text">
+          Fabrication and physical assembly
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">04</div>
+        <div class="step-title">Micro-CT</div>
+        <div class="step-text">
+          Fixture positioning for imaging
+        </div>
+      </div>
+
+    </div>
+
+
+    <h2>CAD Design</h2>
+
+    <figure>
+      <img src="../images/micro-ct/cad.png"
+           alt="CAD design of the micro-CT fixture">
+      <figcaption>
+        CAD model of the custom micro-CT fixture.
+      </figcaption>
+    </figure>
+
+
+    <h2>Fabrication</h2>
+
+    <figure>
+      <img src="../images/micro-ct/printed-fixture.png"
+           alt="3D printed micro-CT fixture">
+      <figcaption>
+        Fabricated fixture produced using 3D printing.
+      </figcaption>
+    </figure>
+
+
+    <h2>Micro-CT Setup</h2>
+
+    <figure>
+      <img src="../images/micro-ct/setup.png"
+           alt="Micro-CT imaging setup">
+      <figcaption>
+        Fixture positioned for micro-CT imaging.
+      </figcaption>
+    </figure>
+
+
+    <div class="note">
+      This project focuses on the design and fabrication workflow used to
+      support repeatable micro-CT imaging of haemodialysis catheters.
+    </div>
+
+
+    <h2>Tools & Methods</h2>
+
+    <p class="tools">
+      SolidWorks · CAD · 3D Printing · Micro-CT
+    </p>
+
+  </div>
+
+</body>
+</html>

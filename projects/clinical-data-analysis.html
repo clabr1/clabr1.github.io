@@ -1,0 +1,303 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Clinical Data Analysis — Claudia Bruno</title>
+
+<style>
+:root{
+  color-scheme:light dark;
+  --bg:light-dark(#f7f7f3,#111513);
+  --ink:light-dark(#17201f,#eef2ef);
+  --muted:light-dark(#68726f,#aeb8b4);
+  --line:light-dark(#dce1de,#303734);
+  --accent:light-dark(#1f5f5b,#7fc2bc);
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font:15px/1.6 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif
+}
+
+a{color:inherit}
+
+main{
+  max-width:900px;
+  margin:auto;
+  padding:28px 22px 60px
+}
+
+.back{
+  display:inline-block;
+  margin-bottom:35px;
+  color:var(--muted);
+  text-decoration:none;
+  font-size:13px
+}
+
+.back:hover{color:var(--accent)}
+
+header{
+  padding-bottom:24px;
+  border-bottom:1px solid var(--line)
+}
+
+h1{
+  font-size:30px;
+  line-height:1.15;
+  letter-spacing:-.03em;
+  margin:0 0 8px
+}
+
+.subtitle{
+  color:var(--muted);
+  font-size:14px
+}
+
+.meta{
+  margin-top:12px;
+  color:var(--accent);
+  font-size:12px
+}
+
+section{
+  padding:25px 0;
+  border-bottom:1px solid var(--line)
+}
+
+h2{
+  font-size:14px;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  margin:0 0 13px
+}
+
+p{
+  max-width:760px;
+  margin:0 0 12px
+}
+
+.muted{color:var(--muted)}
+
+.publication{
+  margin-top:18px;
+  padding:14px 16px;
+  border-left:2px solid var(--accent);
+  background:color-mix(in srgb,var(--accent) 7%,transparent);
+  font-size:13px
+}
+
+.publication a{
+  color:var(--accent);
+  text-decoration:none
+}
+
+/* IMAGE / GALLERY */
+
+figure{
+  margin:22px 0
+}
+
+figure img{
+  display:block;
+  width:100%;
+  height:auto;
+  border:1px solid var(--line)
+}
+
+figcaption{
+  margin-top:7px;
+  color:var(--muted);
+  font-size:12px
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px;
+  margin-top:18px
+}
+
+.gallery figure{
+  margin:0
+}
+
+.tools{
+  color:var(--muted);
+  font-size:13px
+}
+
+@media(max-width:650px){
+  main{
+    padding:20px 16px 45px
+  }
+
+  .gallery{
+    grid-template-columns:1fr
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+<main>
+
+<a class="back" href="../index.html">← Back to projects</a>
+
+<header>
+
+  <h1>Clinical Data Analysis</h1>
+
+  <div class="subtitle">
+    Analysis of paediatric haemodialysis catheter data
+  </div>
+
+  <div class="meta">
+    Python · Statistics · Survival Analysis · Data Visualisation
+  </div>
+
+</header>
+
+<section>
+
+  <h2>Overview</h2>
+
+  <p>
+    Analysed paediatric haemodialysis catheter data using Python,
+    combining data processing, statistical analysis, survival analysis
+    and visualisation.
+  </p>
+
+  <p>
+    The work contributed to the assessment of catheter clinical
+    performance and microstructural characteristics across multiple
+    UK centres.
+  </p>
+
+  <div class="publication">
+
+```
+<strong>Published work</strong><br>
+
+Clinical performance and microstructural assessment of haemodialysis
+catheters for children on maintenance dialysis.
+
+<br><br>
+
+<a href="https://doi.org/10.1007/s00467-026-07500-6"
+   target="_blank"
+   rel="noopener">
+  View publication ↗
+</a>
+```
+
+  </div>
+
+</section>
+
+<section>
+
+  <h2>What I did</h2>
+
+  <p>
+    Data cleaning and preparation, statistical testing, survival analysis
+    and visualisation were performed in Python to investigate catheter
+    performance and related clinical data.
+  </p>
+
+</section>
+
+<section>
+
+  <h2>Figures &amp; Visualisation</h2>
+
+  <!-- =========================================================
+       ADD PHOTO / FIGURE HERE
+
+       Put your image inside:
+       images/clinical/
+
+       Example:
+       images/clinical/figure-01.png
+
+       Then replace the example filename below.
+       ========================================================= -->
+
+  <figure>
+
+```
+<img
+  src="../images/clinical/figure-01.png"
+  alt="Clinical data analysis figure">
+
+<figcaption>
+  <!-- WRITE YOUR FIGURE CAPTION HERE -->
+  Example figure from the analysis.
+</figcaption>
+```
+
+  </figure>
+
+  <!-- =========================================================
+       OPTIONAL SECOND IMAGE
+       Delete this block if you don't need it.
+       ========================================================= -->
+
+  <div class="gallery">
+
+```
+<figure>
+
+  <img
+    src="../images/clinical/figure-02.png"
+    alt="Clinical data visualisation">
+
+  <figcaption>
+    <!-- WRITE YOUR CAPTION HERE -->
+    Data visualisation.
+  </figcaption>
+
+</figure>
+
+
+<figure>
+
+  <img
+    src="../images/clinical/figure-03.png"
+    alt="Statistical analysis">
+
+  <figcaption>
+    <!-- WRITE YOUR CAPTION HERE -->
+    Statistical analysis.
+  </figcaption>
+
+</figure>
+```
+
+  </div>
+
+</section>
+
+<section>
+
+  <h2>Tools</h2>
+
+  <div class="tools">
+    Python · pandas · statistical analysis · survival analysis · visualisation
+  </div>
+
+</section>
+
+</main>
+
+</body>
+</html>

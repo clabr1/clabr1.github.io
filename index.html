@@ -1,9 +1,10 @@
 <!doctype html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Claudia Bruno test — Biomedical Engineering</title>
+<title>Claudia Bruno — Modeling & Simulation Engineer</title>
 
 <style>
 :root{
@@ -13,7 +14,7 @@
   --ink:light-dark(#17201f,#eef2ef);
   --muted:light-dark(#68726f,#aeb8b4);
   --line:light-dark(#dce1de,#303734);
-  --accent:light-dark(#1f5f5b,#7fc2bc)
+  --accent:light-dark(#1f5f5b,#7fc2bc);
 }
 
 *{box-sizing:border-box}
@@ -36,9 +37,6 @@ main{
 }
 
 .top{
-  display:grid;
-  grid-template-columns:1fr;
-  gap:30px;
   padding-bottom:22px;
   border-bottom:1px solid var(--line)
 }
@@ -103,16 +101,22 @@ h2{
   font-size:13px
 }
 
+/* PROJECTS */
+
 .project{
   display:grid;
   grid-template-columns:32px 1fr auto;
   gap:12px;
-  padding:11px 0;
+  padding:13px 0;
   border-top:1px solid var(--line);
-  align-items:start
+  align-items:start;
+  text-decoration:none;
+  transition:opacity .15s ease
 }
 
 .project:first-of-type{border-top:0}
+
+.project:hover{opacity:.7}
 
 .num{
   font-size:12px;
@@ -139,7 +143,6 @@ h2{
 .pub{
   font-size:11px;
   color:var(--accent);
-  text-decoration:none;
   margin-left:8px
 }
 
@@ -161,17 +164,9 @@ h2{
 }
 
 @media(max-width:650px){
-  main{
-    padding:20px 16px 40px
-  }
+  main{padding:20px 16px 40px}
 
-  .top{
-    grid-template-columns:1fr
-  }
-
-  .skills{
-    grid-template-columns:1fr
-  }
+  .skills{grid-template-columns:1fr}
 
   .project{
     grid-template-columns:25px 1fr
@@ -182,17 +177,17 @@ h2{
   }
 }
 </style>
+
 </head>
 
 <body>
+
 <main>
 
 <header class="top">
-  <div>
-    <h1>Claudia Bruno</h1>
-    <div class="role">
-      Modeling &amp; Simulation Engineer · PhD in Biomedical Engineering, UCL
-    </div>
+  <h1>Claudia Bruno</h1>
+  <div class="role">
+    Modeling &amp; Simulation Engineer · PhD in Biomedical Engineering, UCL
   </div>
 </header>
 
@@ -207,6 +202,7 @@ h2{
 
 <section id="about">
   <h2>About</h2>
+
   <div class="about">
     Biomedical engineer working at the intersection of computational modelling,
     experimental validation and data-driven analysis. My work combines CFD,
@@ -220,25 +216,27 @@ h2{
 
   <div class="skills">
 
-    <div class="skill">
-      <b>Computational Modelling</b>
-      <span>CFD · CAD · meshing · post-processing · solver setup</span>
-    </div>
+```
+<div class="skill">
+  <b>Computational Modelling</b>
+  <span>CFD · CAD · meshing · post-processing · solver setup</span>
+</div>
 
-    <div class="skill">
-      <b>Data &amp; Optimisation</b>
-      <span>Python · statistics · DOE · metamodels · optimisation</span>
-    </div>
+<div class="skill">
+  <b>Data &amp; Optimisation</b>
+  <span>Python · statistics · DOE · metamodels · optimisation</span>
+</div>
 
-    <div class="skill">
-      <b>Experimental</b>
-      <span>PIV · flow measurements · CFD validation</span>
-    </div>
+<div class="skill">
+  <b>Experimental</b>
+  <span>PIV · flow measurements · CFD validation</span>
+</div>
 
-    <div class="skill">
-      <b>Engineering</b>
-      <span>SolidWorks · Ansys Fluent · optiSLang · Simpleware ScanIP · 3D printing</span>
-    </div>
+<div class="skill">
+  <b>Engineering</b>
+  <span>SolidWorks · Ansys Fluent · optiSLang · Simpleware ScanIP · 3D printing</span>
+</div>
+```
 
   </div>
 </section>
@@ -246,67 +244,102 @@ h2{
 <section id="projects">
   <h2>Selected Projects</h2>
 
-  <div class="project">
-    <div class="num">01</div>
-    <div>
-      <h3>
-        Clinical Data Analysis
-        <a class="pub" href="https://doi.org/10.1007/s00467-026-07500-6">
-          Published ↗
-        </a>
-      </h3>
-      <p>
-        Analysed paediatric haemodialysis catheter data in Python using
-        data processing, statistical testing, survival analysis and
-        visualisation.
-      </p>
-    </div>
-    <div class="tag">Python · Statistics</div>
-  </div>
+  <!-- PROJECT 01 -->
 
-  <div class="project">
-    <div class="num">02</div>
-    <div>
-      <h3>Catheter Design &amp; DOE</h3>
-      <p>
-        Built a workflow from micro-CT images and geometric measurements
-        to SolidWorks CAD, CFD setup and Design of Experiments to study
-        catheter geometry.
-      </p>
-    </div>
-    <div class="tag">CAD · CFD · DOE</div>
-  </div>
+  <a class="project" href="projects/clinical-data-analysis.html">
 
-  <div class="project">
-    <div class="num">03</div>
-    <div>
-      <h3>Experimental Flow Measurement</h3>
-      <p>
-        Developed and used a controlled flow-loop with Particle Image
-        Velocimetry to obtain experimental flow measurements for comparison
-        with computational models.
-      </p>
-    </div>
-    <div class="tag">PIV · Validation</div>
-  </div>
+```
+<div class="num">01</div>
 
-  <div class="project">
-    <div class="num">04</div>
-    <div>
-      <h3>Micro-CT Fixture Design</h3>
-      <p>
-        Designed and fabricated a custom fixture to position haemodialysis
-        catheters for micro-CT imaging, from CAD design through 3D printing
-        and scanner setup.
-      </p>
-    </div>
-    <div class="tag">CAD · Prototyping</div>
-  </div>
+<div>
+  <h3>
+    Clinical Data Analysis
+    <span class="pub">Published ↗</span>
+  </h3>
+
+  <p>
+    Analysed paediatric haemodialysis catheter data in Python using
+    data processing, statistical testing, survival analysis and
+    visualisation.
+  </p>
+</div>
+
+<div class="tag">Python · Statistics</div>
+```
+
+  </a>
+
+  <!-- PROJECT 02 -->
+
+  <a class="project" href="projects/catheter-design-doe.html">
+
+```
+<div class="num">02</div>
+
+<div>
+  <h3>Catheter Design &amp; DOE</h3>
+
+  <p>
+    Built a workflow from micro-CT images and geometric measurements
+    to SolidWorks CAD, CFD setup and Design of Experiments to study
+    catheter geometry.
+  </p>
+</div>
+
+<div class="tag">CAD · CFD · DOE</div>
+```
+
+  </a>
+
+  <!-- PROJECT 03 -->
+
+  <a class="project" href="projects/experimental-flow-measurement.html">
+
+```
+<div class="num">03</div>
+
+<div>
+  <h3>Experimental Flow Measurement</h3>
+
+  <p>
+    Developed and used a controlled flow-loop with Particle Image
+    Velocimetry to obtain experimental flow measurements for comparison
+    with computational models.
+  </p>
+</div>
+
+<div class="tag">PIV · Validation</div>
+```
+
+  </a>
+
+  <!-- PROJECT 04 -->
+
+  <a class="project" href="projects/micro-ct-fixture.html">
+
+```
+<div class="num">04</div>
+
+<div>
+  <h3>Micro-CT Fixture Design</h3>
+
+  <p>
+    Designed and fabricated a custom fixture to position haemodialysis
+    catheters for micro-CT imaging, from CAD design through 3D printing
+    and scanner setup.
+  </p>
+</div>
+
+<div class="tag">CAD · Prototyping</div>
+```
+
+  </a>
 
 </section>
 
 <section id="conferences">
   <h2>Conferences &amp; Presentations</h2>
+
   <div class="conf">
     Selected conference talks and poster presentations will be listed here.
   </div>
@@ -324,5 +357,6 @@ h2{
 </section>
 
 </main>
+
 </body>
 </html>

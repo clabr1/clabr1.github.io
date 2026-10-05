@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Experimental Flow Measurement | Claudia Bruno</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      color: #222;
+      background: #fff;
+      line-height: 1.65;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 50px 25px 70px;
+    }
+
+    a {
+      color: #333;
+    }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 35px;
+      text-decoration: none;
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    .back:hover {
+      color: #000;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .subtitle {
+      font-size: 1.15rem;
+      color: #555;
+      margin-bottom: 8px;
+    }
+
+    .meta {
+      color: #777;
+      font-size: 0.9rem;
+      margin-bottom: 45px;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      margin-top: 45px;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    p {
+      max-width: 800px;
+    }
+
+    .workflow {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin: 25px 0 35px;
+    }
+
+    .step {
+      border: 1px solid #ddd;
+      padding: 18px 15px;
+      background: #fafafa;
+    }
+
+    .step-number {
+      font-size: 0.8rem;
+      color: #888;
+      margin-bottom: 8px;
+    }
+
+    .step-title {
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .step-text {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    figure {
+      margin: 25px 0;
+    }
+
+    figure img {
+      width: 100%;
+      max-height: 520px;
+      object-fit: contain;
+      display: block;
+      background: #f7f7f7;
+      border: 1px solid #e1e1e1;
+    }
+
+    figcaption {
+      font-size: 0.85rem;
+      color: #777;
+      margin-top: 8px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .note {
+      border-left: 3px solid #ccc;
+      padding: 12px 18px;
+      margin: 30px 0;
+      color: #666;
+      background: #fafafa;
+    }
+
+    .tools {
+      margin-top: 15px;
+      color: #555;
+    }
+
+    @media (max-width: 700px) {
+      .workflow {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .workflow {
+        grid-template-columns: 1fr;
+      }
+
+      .container {
+        padding: 35px 20px 50px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <a class="back" href="../index.html">← Back to homepage</a>
+
+    <h1>Experimental Flow Measurement</h1>
+
+    <div class="subtitle">
+      Controlled flow-loop and Particle Image Velocimetry
+    </div>
+
+    <div class="meta">
+      PIV · Flow Loop · Validation
+    </div>
+
+
+    <h2>Overview</h2>
+
+    <p>
+      Developed and used a controlled flow-loop with Particle Image Velocimetry
+      to obtain experimental flow measurements for comparison with computational
+      models.
+    </p>
+
+    <p>
+      The experimental setup was designed to provide controlled and repeatable
+      flow conditions while enabling optical measurement of the flow field.
+    </p>
+
+
+    <h2>Experimental workflow</h2>
+
+    <div class="workflow">
+
+      <div class="step">
+        <div class="step-number">01</div>
+        <div class="step-title">Flow Loop</div>
+        <div class="step-text">
+          Controlled experimental flow conditions
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">02</div>
+        <div class="step-title">PIV Acquisition</div>
+        <div class="step-text">
+          Optical image acquisition of seeded flow
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">03</div>
+        <div class="step-title">Image Processing</div>
+        <div class="step-text">
+          Processing of experimental image data
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-number">04</div>
+        <div class="step-title">Comparison</div>
+        <div class="step-text">
+          Experimental measurements for CFD validation
+        </div>
+      </div>
+
+    </div>
+
+
+    <h2>Experimental setup</h2>
+
+    <figure>
+      <img src="../images/piv/flow-loop.png"
+           alt="Experimental flow-loop setup">
+      <figcaption>
+        Controlled flow-loop used for experimental flow measurements.
+      </figcaption>
+    </figure>
+
+
+    <h2>Particle Image Velocimetry</h2>
+
+    <div class="gallery">
+
+      <figure>
+        <img src="../images/piv/piv-setup.png"
+             alt="Particle Image Velocimetry experimental setup">
+        <figcaption>
+          PIV optical setup for flow measurement.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="../images/piv/piv-acquisition.png"
+             alt="PIV image acquisition">
+        <figcaption>
+          Example of the experimental image acquisition process.
+        </figcaption>
+      </figure>
+
+    </div>
+
+
+    <div class="note">
+      This project page focuses on the experimental methodology and setup.
+      Quantitative results and detailed measurement data are not shown.
+    </div>
+
+
+    <h2>Tools & Methods</h2>
+
+    <p class="tools">
+      PIV · Flow Loop · Image Acquisition · Experimental Validation
+    </p>
+
+  </div>
+
+</body>
+</html>
