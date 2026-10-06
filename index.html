@@ -176,6 +176,42 @@ h2{
     grid-column:2
   }
 }
+
+.conference-list {
+  margin-top: 20px;
+}
+
+.conference {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 20px;
+  padding: 16px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.conference-date {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.conference strong {
+  display: block;
+  font-weight: 600;
+}
+
+.conference span {
+  display: block;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 3px;
+}
+
+@media (max-width: 600px) {
+  .conference {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
 </style>
 
 </head>
@@ -187,7 +223,7 @@ h2{
 <header class="top">
   <h1>Claudia Bruno</h1>
   <div class="role">
-    Modeling &amp; Simulation Engineer · PhD in Biomedical Engineering, UCL
+    Modeling &amp; Simulation Engineer · PhD in Biomedical Engineering at UCL
   </div>
 </header>
 
@@ -277,7 +313,9 @@ h2{
 <div class="num">02</div>
 
 <div>
-  <h3>Catheter Design &amp; DOE</h3>
+  <h3>Catheter Design &amp; DOE
+  <span class="pub">Published ↗</span>
+  </h3>
 
   <p>
     Built a workflow from micro-CT images and geometric measurements
@@ -338,11 +376,76 @@ h2{
 </section>
 
 <section id="conferences">
-  <h2>Conferences &amp; Presentations</h2>
+  <h2>Conferences & Presentations</h2>
 
-  <div class="conf">
-    Selected conference talks and poster presentations will be listed here.
+  <div class="conference-list">
+
+    <div class="conference">
+      <div class="conference-date">September 2026</div>
+      <div>
+        <strong>Virtual Physiological Human (VPH) Conference</strong>
+        <span>Milan, Italy · Oral Presentation</span>
+      </div>
+    </div>
+
+    <div class="conference">
+      <div class="conference-date">February 2025</div>
+      <div>
+        <strong>International Pediatric Nephrology Association (IPNA) Congress</strong>
+        <span>Cape Town, South Africa · Oral Presentation</span>
+      </div>
+    </div>
+
+    <div class="conference">
+      <div class="conference-date">May 2024</div>
+      <div>
+        <strong>European Renal Association (ERA) Congress</strong>
+        <span>Stockholm, Sweden · Focused Oral Presentation</span>
+      </div>
+    </div>
+
+    <div class="conference">
+      <div class="conference-date">July 2024</div>
+      <div>
+        <strong>European Society of Biomechanics (ESB) Congress</strong>
+        <span>Edinburgh, UK · Oral Presentation</span>
+      </div>
+    </div>
+
+    <div class="conference">
+      <div class="conference-date">September 2023</div>
+      <div>
+        <strong>European Society for Paediatric Nephrology (ESPN) Annual Meeting</strong>
+        <span>Vilnius, Lithuania · Oral Presentation</span>
+      </div>
+    </div>
+
+    <div class="conference">
+      <div class="conference-date">September 2022</div>
+      <div>
+        <strong>Virtual Physiological Human (VPH) Conference</strong>
+        <span>Porto, Portugal · Oral Presentation</span>
+      </div>
+    </div>
+
+    <div class="conference">
+      <div class="conference-date">November 2022</div>
+      <div>
+        <strong>Kidney Research UK (KRUK) Driving Discoveries</strong>
+        <span>Edinburgh, UK · Oral Presentation</span>
+      </div>
+    </div>
+
+    <div class="conference">
+      <div class="conference-date">November 2021</div>
+      <div>
+        <strong>European Symposium on Vascular Biomaterials (ESVB)</strong>
+        <span>Strasbourg, France · Oral Presentation</span>
+      </div>
+    </div>
+
   </div>
+</section>
 </section>
 
 <section id="contact">
