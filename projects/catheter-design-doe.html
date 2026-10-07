@@ -94,9 +94,17 @@ p{
   font-size:13px
 }
 
+.publication + .publication{
+  margin-top:10px
+}
+
 .publication a{
   color:var(--accent);
   text-decoration:none
+}
+
+.publication a:hover{
+  text-decoration:underline
 }
 
 
@@ -199,50 +207,79 @@ figcaption{
   <h1>Catheter Design &amp; DOE</h1>
 
   <div class="subtitle">
-    From micro-CT geometry to CAD, CFD setup and Design of Experiments
+    From high-resolution imaging to CFD-based design exploration of paediatric haemodialysis catheters
   </div>
 
   <div class="meta">
-    CAD · CFD · DOE · Micro-CT
+    Micro-CT · CAD · CFD · DOE · Python
   </div>
 
 </header>
 
+
 <section>
 
-  <h2>Overview</h2>
+  <h2>The Challenge</h2>
 
   <p>
-    Developed a workflow to translate catheter geometry obtained from
-    micro-CT imaging into a computational modelling framework.
+    Central venous catheters are widely used for paediatric haemodialysis,
+    but their design can lead to unfavourable flow conditions, including
+    stagnation, unbalanced flow distribution and high shear stresses.
   </p>
 
   <p>
-    The workflow combined geometric measurements, CAD reconstruction,
-    CFD setup and Design of Experiments to investigate the influence
-    of catheter geometry.
+    This case study combines computational characterisation of existing
+    catheter designs with a systematic exploration of the geometric
+    parameters that influence haemodynamic performance.
   </p>
 
-   <div class="publication">
+  <p>
+    I was Principal Investigator of an NIHR-funded project developing a
+    data-driven approach to investigate current limitations of central
+    venous lines for haemodialysis in children and support the development
+    of novel design solutions.
+  </p>
 
- 
-<strong>Published work</strong><br>
+  <div class="publication">
 
-Design Parametrization of Central Venous Catheters for Pediatric Dialysis: Supporting the Quest for the Most Influential Features.
+    <strong>Published work</strong><br>
 
-<br><br>
+    <em>
+      Computational investigation of the haemodynamics shows criticalities
+      of central venous lines used for chronic haemodialysis in children.
+    </em>
 
-<a href="https://www.ovid.com/10.1097/MAT.0000000000002547"
-   target="_blank"
-   rel="noopener">
-  View publication ↗
-</a>
- 
+    <br><br>
+
+    <a href="https://doi.org/10.3389/fped.2022.1055212"
+       target="_blank"
+       rel="noopener noreferrer">
+      View publication ↗
+    </a>
 
   </div>
 
+  <div class="publication">
+
+    <strong>Published work</strong><br>
+
+    <em>
+      Design Parametrization of Central Venous Catheters for Pediatric
+      Dialysis: Supporting the Quest for the Most Influential Features.
+    </em>
+
+    <br><br>
+
+    <a href="https://doi.org/10.1097/MAT.0000000000002547"
+       target="_blank"
+       rel="noopener noreferrer">
+      View publication ↗
+    </a>
+
+  </div>
 
 </section>
+
 
 <section>
 
@@ -250,145 +287,165 @@ Design Parametrization of Central Venous Catheters for Pediatric Dialysis: Suppo
 
   <div class="workflow">
 
- 
-<div class="step">
-  <b>01 · Micro-CT</b>
-  <span>Imaging and geometric assessment</span>
-</div>
+    <div class="step">
+      <b>01 · Micro-CT</b>
+      <span>Imaging and geometric assessment</span>
+    </div>
 
-<div class="step">
-  <b>02 · CAD</b>
-  <span>Geometry reconstruction in SolidWorks</span>
-</div>
+    <div class="step">
+      <b>02 · CAD</b>
+      <span>Geometry reconstruction and parametrisation</span>
+    </div>
 
-<div class="step">
-  <b>03 · CFD</b>
-  <span>Computational model and solver setup</span>
-</div>
+    <div class="step">
+      <b>03 · CFD</b>
+      <span>Haemodynamic characterisation</span>
+    </div>
 
-<div class="step">
-  <b>04 · DOE</b>
-  <span>Systematic study of design parameters</span>
-</div>
- 
+    <div class="step">
+      <b>04 · DOE</b>
+      <span>Systematic design-space exploration</span>
+    </div>
 
   </div>
 
 </section>
 
+
 <section>
 
-  <h2>Micro-CT &amp; Geometry</h2>
+  <h2>Geometry Reconstruction</h2>
 
-  <!-- =====================================================
-       ADD PHOTO HERE
+  <p>
+    High-resolution micro-CT images were used to reconstruct accurate
+    three-dimensional catheter geometries, including the arterial and
+    venous lumens, tips and side holes.
+  </p>
 
-       Recommended image:
-       - micro-CT image
-       - reconstructed geometry
-       - measurement screenshot
-
-       File location:
-       images/catheter/
-
-       Example:
-       images/catheter/micro-ct.png
-       ===================================================== -->
+  <p>
+    Geometric measurements were extracted from the reconstructed models
+    and used to generate controlled computational geometries for the
+    subsequent CAD and CFD analyses.
+  </p>
 
   <figure>
 
- 
-<img
-  src="../images/catheter/micro-ct.png"
-  alt="Micro-CT catheter geometry">
+    <img
+      src="../images/catheter/micro-ct.png"
+      alt="Micro-CT catheter geometry">
 
-<figcaption>
-  <!-- WRITE YOUR CAPTION HERE -->
-  Catheter geometry obtained from micro-CT imaging.
-</figcaption>
- 
+    <figcaption>
+      Catheter geometry reconstructed from high-resolution micro-CT imaging.
+    </figcaption>
 
   </figure>
 
 </section>
+
 
 <section>
 
   <h2>CAD Design</h2>
 
   <p>
-    The measured geometry was translated into CAD models to create
+    The measured geometries were translated into CAD models to create
     controlled and reproducible computational geometries.
   </p>
 
-  <!-- =====================================================
-       ADD CAD IMAGES HERE
-       ===================================================== -->
+  <p>
+    The catheter features were subsequently parametrised to enable the
+    systematic variation of geometric characteristics such as side-hole
+    diameter and position and tip geometry.
+  </p>
 
   <div class="gallery">
 
- 
-<figure>
+    <figure>
 
-  <img
-    src="../images/catheter/cad-01.png"
-    alt="Catheter CAD model">
+      <img
+        src="../images/catheter/cad-01.png"
+        alt="Catheter CAD model">
 
-  <figcaption>
-    <!-- WRITE YOUR CAPTION HERE -->
-    CAD reconstruction of catheter geometry.
-  </figcaption>
+      <figcaption>
+        CAD reconstruction of catheter geometry.
+      </figcaption>
 
-</figure>
+    </figure>
 
+    <figure>
 
-<figure>
+      <img
+        src="../images/catheter/cad-02.png"
+        alt="Catheter CAD geometry">
 
-  <img
-    src="../images/catheter/cad-02.png"
-    alt="Catheter CAD geometry">
+      <figcaption>
+        Geometric features used in the computational model.
+      </figcaption>
 
-  <figcaption>
-    <!-- WRITE YOUR CAPTION HERE -->
-    Geometric features used in the computational model.
-  </figcaption>
-
-</figure>
- 
+    </figure>
 
   </div>
 
 </section>
 
+
 <section>
 
-  <h2>CFD Setup</h2>
+  <h2>CFD Characterisation</h2>
 
   <p>
-    The CAD geometries were prepared for CFD analysis, including
-    computational domain preparation, meshing and solver setup.
+    The reconstructed catheter geometries were analysed using
+    computational fluid dynamics to investigate flow behaviour under
+    paediatric haemodialysis conditions.
   </p>
 
-  <!-- =====================================================
-       ADD CFD SETUP IMAGE HERE
-       ===================================================== -->
+  <p>
+    Blood flow distribution, velocity, residence time, shear stress and
+    platelet lysis index were evaluated to compare different catheter
+    designs and identify haemodynamic criticalities.
+  </p>
+
+  <p>
+    The analysis showed low-flow regions near the arterial tip and an
+    unbalanced distribution of flow between the tip and side holes.
+    Anatomical models also showed increased flow disturbance and wall
+    shear stress following catheter placement.
+  </p>
 
   <figure>
 
- 
-<img
-  src="../images/catheter/cfd-setup.png"
-  alt="CFD model setup">
+    <img
+      src="../images/catheter/cfd-setup.png"
+      alt="CFD model setup">
 
-<figcaption>
-  <!-- WRITE YOUR CAPTION HERE -->
-  Computational model and CFD setup.
-</figcaption>
- 
+    <figcaption>
+      Computational model and CFD setup used for haemodynamic analysis.
+    </figcaption>
 
   </figure>
 
 </section>
+
+
+<section>
+
+  <h2>From CFD to Parametrisation</h2>
+
+  <p>
+    Building on the CFD characterisation, the geometry of two catheter
+    models was parametrised to investigate which design features had the
+    strongest influence on haemodynamic performance.
+  </p>
+
+  <p>
+    The parametrisation included side-hole diameter and position together
+    with geometric parameters describing the catheter tip. The Tesio 6.5F
+    model included 21 design variables, while the Hemo-Cath 8F model
+    included 9 variables.
+  </p>
+
+</section>
+
 
 <section>
 
@@ -396,51 +453,128 @@ Design Parametrization of Central Venous Catheters for Pediatric Dialysis: Suppo
 
   <p>
     A Design of Experiments framework was developed to systematically
-    investigate the effect of selected geometric parameters.
+    explore the resulting design space and investigate the influence of
+    individual geometric parameters and their interactions.
   </p>
 
-  <!-- =====================================================
-       OPTIONAL DOE IMAGE
+  <p>
+    Latin Hypercube Sampling was used to generate the design points.
+    The sampled geometries were automatically transferred through the
+    CAD and CFD workflow, while Python scripts were used to filter
+    invalid geometries, label the side holes and post-process the
+    computational results.
+  </p>
 
-       You can show:
-       - DOE matrix structure
-       - parameter definition
-       - workflow diagram
-
-       Avoid showing unpublished optimisation results.
-       ===================================================== -->
+  <p>
+    The analysis considered blood flow rate, shear stress, residence time
+    and platelet lysis index as performance indicators.
+  </p>
 
   <figure>
 
- 
-<img
-  src="../images/catheter/doe.png"
-  alt="Design of Experiments workflow">
+    <img
+      src="../images/catheter/doe.png"
+      alt="Design of Experiments workflow">
 
-<figcaption>
-  <!-- WRITE YOUR CAPTION HERE -->
-  Design of Experiments framework.
-</figcaption>
- 
+    <figcaption>
+      Design of Experiments framework for systematic exploration of
+      catheter geometric parameters.
+    </figcaption>
 
   </figure>
 
+</section>
+
+
+<section>
+
+  <h2>What the Analysis Showed</h2>
+
+  <p>
+    The DOE identified the proximal side holes as some of the most
+    influential geometric features, affecting both flow rates and
+    shear stress.
+  </p>
+
+  <p>
+    The influence of individual features depended on the catheter lumen
+    and operating flow rate, highlighting the importance of considering
+    the interaction between catheter geometry and haemodynamic conditions.
+  </p>
+
+  <p>
+    The findings were translated into practical design recommendations
+    concerning the number, position and diameter of side holes, as well
+    as the diameter and positioning of the tip opening.
+  </p>
+
   <div class="note">
-    The project page focuses on the modelling workflow and methodology;
-    detailed optimisation results are not shown.
+    The computational workflow enabled systematic comparison of catheter
+    geometries and provided a basis for future paediatric-specific
+    catheter development.
   </div>
 
 </section>
+
 
 <section>
 
   <h2>Tools</h2>
 
   <div class="tools">
-    SolidWorks · Ansys Fluent · optiSLang · Simpleware ScanIP · CFD · DOE
+    Micro-CT · Simpleware ScanIP · SolidWorks · Ansys DesignModeler ·
+    Ansys Fluent · Ansys Workbench · optiSLang · Python · CFD · DOE
   </div>
 
 </section>
+
+
+<section>
+
+  <h2>Publications</h2>
+
+  <div class="publication">
+
+    <strong>2022 · Frontiers in Pediatrics</strong><br>
+
+    <em>
+      Bruno C. et al. Computational investigation of the haemodynamics
+      shows criticalities of central venous lines used for chronic
+      haemodialysis in children.
+    </em>
+
+    <br><br>
+
+    <a href="https://doi.org/10.3389/fped.2022.1055212"
+       target="_blank"
+       rel="noopener noreferrer">
+      Read paper ↗
+    </a>
+
+  </div>
+
+  <div class="publication">
+
+    <strong>2026 · ASAIO Journal</strong><br>
+
+    <em>
+      Bruno C. et al. Design Parametrization of Central Venous Catheters
+      for Pediatric Dialysis: Supporting the Quest for the Most
+      Influential Features.
+    </em>
+
+    <br><br>
+
+    <a href="https://doi.org/10.1097/MAT.0000000000002547"
+       target="_blank"
+       rel="noopener noreferrer">
+      Read paper ↗
+    </a>
+
+  </div>
+
+</section>
+
 
 </main>
 
